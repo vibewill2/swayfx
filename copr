@@ -1,2 +1,4 @@
 sudo dnf copr enable swayfx/swayfx
 https://github.com/danyspin97/wpaperd
+
+sudo zypper ar -f https://download.opensuse.org/repositories/X11:Wayland/openSUSE_Tumbleweed/X11:Wayland.repo

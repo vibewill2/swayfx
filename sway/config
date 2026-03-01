@@ -41,7 +41,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+q kill
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+b exec ~/.config/hypr/scripts/wallpaper_random.sh
-
+bindsym $mod+p exec python3 ~/.config/waypaper/mini_swww_selector.py
 # --- NAVEGAÇÃO ---
 bindsym $mod+j focus left
 bindsym $mod+k focus down

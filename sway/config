@@ -42,7 +42,6 @@ bindsym $mod+q kill
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+b exec ~/.config/hypr/scripts/wallpaper_random.sh
 
-
 # --- NAVEGAÇÃO ---
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -79,6 +78,7 @@ bindsym $mod+Shift+e exec "swaymsg exit"
 # --- BARRA ---
 bar {
     position top
+    # Certifique-se que o caminho abaixo é o correto para o seu script
     status_command sh $HOME/.config/sway/status.sh
 
     colors {

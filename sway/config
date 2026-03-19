@@ -21,12 +21,12 @@ default_border pixel 2
 gaps inner 10
 gaps outer 10
 
-# Regras de Janelas (Opacidade Thunar 50%)
+# Regras de Janelas (Opacidade Nemo 50%)
 for_window [app_id="nemo"] opacity 0.5
 
 # --- AUTOSTART ---
 exec --no-startup-id nm-applet
-exec  swww-daemon &
+exec swww-daemon &
 exec_always lxqt-policykit-agent &
 
 # --- VOLUME ---
@@ -50,6 +50,18 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+ccedilla focus right
+
+# --- MODOS DE LAYOUT (O QUE FALTAVA) ---
+# Horizontal (lado a lado)
+bindsym $mod+h splith
+
+# Vertical (um em cima do outro)
+bindsym $mod+v splitv
+
+# Layouts extras (opcional, mas útil)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # --- WORKSPACES ---
 set $ws1 "1"

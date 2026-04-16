@@ -27,7 +27,6 @@ while true; do
   # --- DATA ---
   DATE=$(date +'%d/%m/%Y %H:%M')
 
-  # --- SAÍDA FINAL COM TODAS AS CORES ---
-  # CPU: Ciano | MEM: Verde | REDE: Amarelo | VOL: Magenta | DATA: Laranja/Ouro
-  echo "<span color='#00ffff'></span> $CPU | <span color='#00ff00'>💾</span> $MEM | <span color='#ffff00'>🌐</span> ${RX}K↓ ${TX}K↑ | <span color='#ff00ff'></span> $VOL | <span color='#ffaa00'></span> $DATE"
+  # --- SAÍDA FINAL COM FONT AWESOME ---
+  echo "<span color='#00ffff'></span> $CPU | <span color='#00ff00'></span> $MEM | <span color='#ffff00'></span> ${RX}K↓ ${TX}K↑ | <span color='#ff00ff'></span> $VOL | <span color='#ffaa00'></span> $DATE"
 done
